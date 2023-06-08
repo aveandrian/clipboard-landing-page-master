@@ -19,4 +19,4 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![image](https://github.com/aveandrian/clipboard-landing-page-master/assets/13519212/f04dada4-b097-4565-b36b-f024a4cd7978)
