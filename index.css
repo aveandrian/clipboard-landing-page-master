@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('./images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+}
+
+p {
+    font-size: 1.125rem;
+    color: hsl(201, 11%, 66%);
+}
+
+h1 {
+    color: hsl(210, 10%, 33%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    margin-block: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    width: 7%;
+    margin-bottom: 1.25rem;
+}
+
+.header-title {
+    margin-block: 1.25rem;
+    font-size: 2.438rem;
+}
+
+.header-text {
+    width: 45%;
+    margin-bottom: 1.875rem;
+}
+
+.bts-wrapper {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.btn {
+    font-size: 1.125rem;
+    padding: 0.625rem 1.25rem;
+    border-radius: 1.875rem;
+    border: none;
+    color: white;
+    
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn.ios {
+    box-shadow: 0.063rem 0.625rem 0.625rem hsla(171, 66%, 44%, 0.2);
+    background-color: hsl(171, 66%, 44%);
+}
+
+.btn.ios:hover {
+    background-color: hsla(171, 66%, 44%, 0.8);
+}
+
+.btn.mac {
+    box-shadow: 0.063rem 0.625rem 0.625rem hsla(233, 100%, 69%, 0.2);
+    background-color: hsl(233, 100%, 69%);
+}
+
+.btn.mac:hover {
+    background-color: hsla(233, 100%, 69%, 0.8);
+}
+
+.section-title {
+    font-size: 2.188rem;
+    margin-bottom: 1.25rem;
+}
+
+.section-text {
+    margin-bottom: 1.875rem;
+}
+
+.general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3.125rem;
+}
+
+
+.general-text {
+    width: 50%;
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.125rem;
+    margin-bottom: 20vh;
+}
+
+.benefits-img {
+    transform: translateX(-5vw);
+}
+
+.benefits-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+    justify-content: center;
+}
+
+.benefit-title {
+    margin-bottom: 0.625rem;
+}
+
+.benefit-text {
+    width: 60%;
+    line-height: 1.5em;
+}
+
+.access {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3.125rem;
+}
+
+.access-text {
+    width: 75%;
+    margin-bottom: 15vh;
+}
+
+.supercharge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.supercharge-list {
+    display: grid;
+    gap: 1.25rem;
+    width: 85%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.supercharge-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.supercharge-logo {
+    height: 2rem;
+    margin-bottom: 3.125rem;
+}
+
+.supercharge-title {
+    margin-bottom: 1.25rem;
+}
+
+.sponsors {
+    margin-block: 15vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.bottom-text {
+    width: 65%;
+}
+
+footer {
+    width: 100%; 
+    padding:  1.25rem 9.375rem;
+    background: rgb(245, 246, 248);
+}
+
+.footer {
+    display: flex;
+    align-items: center;    
+}
+
+.footer-logo {
+    width: 5%;
+    margin-right: 9.375rem;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.25rem;
+    column-gap: 3.125rem;
+    margin-right: auto;
+}
+
+.footer-links a:hover {
+    cursor: pointer;
+    color: hsl(171, 66%, 44%);
+}
+
+.footer-social {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.fa-brands {
+    color: #4C545C;
+}
+
+.fa-brands:hover {
+    cursor: pointer;
+    color: hsl(171, 66%, 44%);
+}
+
+.attribution {
+    margin-top: 1.25rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.attribution > a {
+    color: hsl(210, 10%, 33%);
+}
+
+@media screen and (max-width: 60rem) {
+    main {
+        width: 100%;
+        padding: 1.25rem;
+    }
+
+    section{
+        width: 100%;
+    }
+
+    .logo {
+        width: 20%;
+    }
+    .header-title {
+        font-size: 2rem;
+    }
+    .header-text {
+        width: 100%;
+    }
+    .bts-wrapper {
+        flex-direction: column;
+    }
+
+    .general-text {
+        width: 100%;
+    }
+
+    .benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-img {
+        width: 100%;
+        transform: none;
+    }
+    .benefits-list {
+        text-align: center;
+    }
+
+    .benefit {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .benefit-text {
+        width: 100%;
+    }
+
+    .access-img {
+        width: 100%;
+    }
+    .supercharge-list {
+        grid-template-columns: 1fr;
+        gap: 3.125rem;
+    }
+
+    .sponsors {
+        flex-direction: column;
+        gap: 3.125rem;
+    }
+
+    footer {
+        width: 100%;
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.875rem;
+    }
+
+    .footer-logo {
+        width: 10%;
+        margin: 0;
+    }
+
+    .footer-links {
+        grid-template-columns: 100%;
+        text-align: center;        
+        margin: 0;
+    }
+}
